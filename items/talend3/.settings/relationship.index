@@ -1,0 +1,49 @@
+[ {
+  "baseItem" : {
+    "id" : "_1KL1kFcTEfCXqpQiPC6Kgw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "CDC",
+    "version" : "Latest",
+    "type" : "routine"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_Gdmi8GfPEfCPtsDXIeZX_A",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_ePcc8GfOEfCPtsDXIeZX_A",
+    "version" : "Latest",
+    "type" : "joblet"
+  }, {
+    "id" : "HashUtil",
+    "version" : "Latest",
+    "type" : "routine"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_lp5W4GOdEfCpOarekpCEzQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "built-in",
+    "version" : "Latest",
+    "type" : "context"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_ePcc8GfOEfCPtsDXIeZX_A",
+    "version" : "0.1",
+    "type" : "joblet"
+  },
+  "relatedItems" : [ {
+    "id" : "HashUtil",
+    "version" : "Latest",
+    "type" : "routine"
+  } ]
+} ]
