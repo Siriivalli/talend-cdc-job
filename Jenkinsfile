@@ -1,19 +1,16 @@
-pipeline {
+﻿pipeline {
     agent any
     
     stages {
-        stage('Checkout') {
+        stage("Checkout") {
             steps {
-                git branch: 'main', url: 'https://github.com/Siriivalli/talend-cdc-job.git'
+                git branch: "main", url: "https://github.com/Siriivalli/talend-cdc-job.git"
             }
         }
-        stage('Debug - List Files') {
+        stage("Run Talend CDC Job") {
             steps {
-                echo "📂 Listing repo root files..."
-                bat 'dir'
-                
-                echo "📂 Listing CDC_Project folder (if it exists)..."
-                bat 'if exist CDC_Project (dir CDC_Project) else echo CDC_Project folder NOT FOUND'
+                echo " Running Talend job..."
+                bat "CDC_Project_run.bat"
             }
         }
     }
