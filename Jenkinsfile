@@ -7,14 +7,10 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/Siriivalli/talend-cdc-job.git'
             }
         }
-        stage('Run Talend CDC Job') {
+        stage('Run Talend Job') {
             steps {
-                script {
-                    // If CDC_Project_run.bat is inside CDC_Project folder
-                    bat """
-                        cd CDC_Project
-                        CDC_Project_run.bat
-                    """
+                dir('CDC_Project') {
+                    bat 'CDC_Project_run.bat'
                 }
             }
         }
