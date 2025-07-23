@@ -9,9 +9,7 @@ pipeline {
         }
         stage('Run Talend Job') {
             steps {
-                dir('CDC_Project') {
-                    bat 'CDC_Project_run.bat'
-                }
+                bat 'CDC_Project_run.bat'
             }
         }
     }
